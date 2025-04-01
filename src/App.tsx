@@ -21,6 +21,8 @@ function App() {
     <>
     <h1>Products</h1>
 
+    <Link to="/product/new">New Product</Link>
+
     <div id="products">
       <div>
         {products.map(product => <div key={product.id}><Link to={`/product/${product.id}`}>{product.name}</Link></div>)}
